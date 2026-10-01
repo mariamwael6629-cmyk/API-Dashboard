@@ -35,22 +35,22 @@ export default function Sidebar() {
   return (
     <motion.aside
       initial={false}
-      animate={{ width: collapsed ? 84 : 248 }}
+      animate={{ width: collapsed ? 68 : 232 }}
       transition={{ type: "spring", stiffness: 260, damping: 28 }}
-      className="relative z-20 m-3 hidden shrink-0 flex-col rounded-3xl glass-strong p-3 lg:flex"
+      className="relative z-20 hidden shrink-0 flex-col border-r border-white/8 bg-void-900 p-3 lg:flex"
     >
-      <div className="flex items-center gap-2 px-2 py-3">
-        <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 via-violet-400 to-fuchsia-400">
-          <Hexagon className="h-5 w-5 text-void-950" strokeWidth={2.5} />
+      <div className="flex items-center gap-2.5 px-2 py-3">
+        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand">
+          <Hexagon className="h-4 w-4 text-white" strokeWidth={2.5} />
         </div>
         {!collapsed && (
-          <span className="font-display text-lg font-semibold tracking-tight text-slate-100">
+          <span className="font-display text-base font-semibold tracking-tight text-slate-100">
             Nexora
           </span>
         )}
       </div>
 
-      <nav className="mt-4 flex flex-1 flex-col gap-1">
+      <nav className="mt-4 flex flex-1 flex-col gap-0.5">
         {NAV.map(({ to, label, icon: Icon, end }) => (
           <NavLink
             key={to}
@@ -58,10 +58,10 @@ export default function Sidebar() {
             end={end}
             className={({ isActive }) =>
               clsx(
-                "focus-ring group relative flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all",
+                "focus-ring group relative flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-all",
                 isActive
-                  ? "text-slate-50"
-                  : "text-slate-400 hover:text-slate-100 hover:bg-white/5"
+                  ? "bg-brand/10 text-brand-light"
+                  : "text-slate-400 hover:bg-white/5 hover:text-slate-100"
               )
             }
           >
@@ -70,11 +70,11 @@ export default function Sidebar() {
                 {isActive && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 rounded-xl glass glow-cyan"
+                    className="absolute inset-0 rounded-lg border border-brand/20 bg-brand/10"
                     transition={{ type: "spring", stiffness: 350, damping: 30 }}
                   />
                 )}
-                <Icon className="relative z-10 h-[18px] w-[18px] shrink-0" strokeWidth={1.75} />
+                <Icon className="relative z-10 h-[17px] w-[17px] shrink-0" strokeWidth={1.75} />
                 {!collapsed && <span className="relative z-10 truncate">{label}</span>}
               </>
             )}
@@ -84,7 +84,7 @@ export default function Sidebar() {
 
       <button
         onClick={toggleSidebar}
-        className="focus-ring flex items-center justify-center gap-2 rounded-xl py-2.5 text-xs text-slate-500 hover:bg-white/5 hover:text-slate-200 cursor-pointer"
+        className="focus-ring flex items-center justify-center gap-2 rounded-lg py-2 text-xs text-slate-500 hover:bg-white/5 hover:text-slate-200 cursor-pointer"
       >
         <ChevronsLeft
           className={clsx("h-4 w-4 transition-transform", collapsed && "rotate-180")}

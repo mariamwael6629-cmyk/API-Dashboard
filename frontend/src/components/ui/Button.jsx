@@ -3,10 +3,13 @@ import { motion } from "framer-motion";
 
 const variants = {
   primary:
-    "bg-gradient-to-r from-cyan-400 via-violet-400 to-fuchsia-400 text-void-950 font-semibold shadow-[0_0_24px_-4px_rgba(76,243,255,0.6)]",
-  secondary: "glass text-slate-100 hover:border-white/20",
-  ghost: "bg-transparent text-slate-300 hover:bg-white/5",
-  danger: "bg-rose-500/15 text-rose-300 border border-rose-500/30 hover:bg-rose-500/25",
+    "bg-brand text-white font-semibold hover:bg-brand-dark shadow-sm transition-colors",
+  secondary:
+    "bg-transparent border border-white/12 text-slate-300 hover:border-brand/40 hover:text-slate-100 transition-colors",
+  ghost:
+    "bg-transparent text-slate-400 hover:bg-white/5 hover:text-slate-200 transition-colors",
+  danger:
+    "bg-rose-500/12 text-rose-300 border border-rose-500/25 hover:bg-rose-500/20 transition-colors",
 };
 
 const sizes = {
@@ -27,10 +30,9 @@ export default function Button({
   const Component = motion[as] ?? motion.button;
   return (
     <Component
-      whileHover={{ scale: 1.03 }}
-      whileTap={{ scale: 0.97 }}
+      whileTap={{ scale: 0.98 }}
       className={clsx(
-        "focus-ring inline-flex items-center justify-center gap-2 rounded-xl transition-colors cursor-pointer",
+        "focus-ring inline-flex items-center justify-center gap-2 rounded-lg cursor-pointer",
         variants[variant],
         sizes[size],
         className

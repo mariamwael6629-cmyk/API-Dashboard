@@ -12,8 +12,9 @@ export default function GlassCard({
   return (
     <Component
       className={clsx(
-        "relative rounded-2xl",
-        strong ? "glass-strong" : "glass",
+        "relative rounded-xl",
+        "bg-void-800 border border-white/8",
+        strong && "bg-void-700",
         glow === "cyan" && "glow-cyan",
         glow === "violet" && "glow-violet",
         glow === "magenta" && "glow-magenta",
