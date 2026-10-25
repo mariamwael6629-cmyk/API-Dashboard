@@ -70,7 +70,7 @@ export default function Landing() {
 
           <div className="hidden items-center gap-3 md:flex">
             <Link to="/login" className="focus-ring rounded-lg">
-              <Button variant="ghost" size="sm" className="text-ink-2 hover:text-ink hover:bg-surface">
+              <Button variant="ghostLight" size="sm">
                 Sign In
               </Button>
             </Link>
@@ -112,7 +112,7 @@ export default function Landing() {
                 ))}
                 <div className="mt-3 flex flex-col gap-2 border-t border-border pt-3">
                   <Link to="/login" onClick={() => setMobileOpen(false)}>
-                    <Button variant="ghost" className="w-full text-ink-2">
+                    <Button variant="ghostLight" className="w-full">
                       Sign In
                     </Button>
                   </Link>

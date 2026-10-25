@@ -5,11 +5,11 @@ import { generateHeatmap } from "../../../lib/mockData";
 
 function cellColor(value) {
   // 0-100 -> cyan (cool/low) through violet to magenta (hot/high)
-  if (value < 25) return "rgba(76,243,255,0.18)";
-  if (value < 50) return "rgba(76,243,255,0.4)";
-  if (value < 70) return "rgba(167,139,250,0.55)";
-  if (value < 85) return "rgba(255,79,216,0.6)";
-  return "rgba(255,79,216,0.9)";
+  if (value < 25) return "rgba(176,59,74,0.18)";
+  if (value < 50) return "rgba(176,59,74,0.4)";
+  if (value < 70) return "rgba(225,164,172,0.55)";
+  if (value < 85) return "rgba(176,59,74,0.6)";
+  return "rgba(176,59,74,0.9)";
 }
 
 export default function LatencyHeatmap() {

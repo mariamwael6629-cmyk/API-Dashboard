@@ -7,44 +7,191 @@
   --font-mono:    "JetBrains Mono", ui-monospace, monospace;
 
   /* ── App shell (dark-neutral, NOT sci-fi) ── */
-  --color-void-950: #0F1117;
-  --color-void-900: #141720;
-  --color-void-800: #1A1E2C;
-  --color-void-700: #1E2235;
-  --color-void-600: #262C42;
+  --color-void-950: #151311;
+  --color-void-900: #1D1A17;
+  --color-void-800: #27231F;
+  --color-void-700: #2E2A25;
+  --color-void-600: #3A342E;
 
   /* ── Brand accent — single professional blue ── */
-  --color-brand:        #2563EB;
-  --color-brand-dark:   #1D4ED8;
-  --color-brand-light:  #60A5FA;
-  --color-brand-bg:     #EFF6FF;
-  --color-brand-border: #BFDBFE;
+  --color-brand:        #B03B4A;
+  --color-brand-dark:   #8E2E3B;
+  --color-brand-light:  #D0707D;
+  --color-brand-bg:     #F8F7F6;
+  --color-brand-border: #EFCED3;
 
   /* ── Landing / light surface tokens ── */
   --color-canvas:   #FFFFFF;
-  --color-surface:  #F6F7FC;
-  --color-surface-2:#EDEEF5;
-  --color-border:   #E4E8F2;
+  --color-surface:  #FAF9F8;
+  --color-surface-2:#F3F1EF;
+  --color-border:   #EDEBE9;
 
   /* ── Text scale ── */
-  --color-ink:   #0C1325;
-  --color-ink-2: #4A5578;
-  --color-ink-3: #8E96B2;
+  --color-ink:   #1B1816;
+  --color-ink-2: #6D6155;
+  --color-ink-3: #ABA095;
 
   /* ── Semantic (no neon) ── */
-  --color-success:    #16A34A;
-  --color-success-bg: #F0FDF4;
+  --color-success:    #8B2E3B;
+  --color-success-bg: #F8F6F5;
   --color-warning:    #D97706;
   --color-warning-bg: #FFFBEB;
   --color-danger:     #DC2626;
   --color-danger-bg:  #FEF2F2;
 
   /* ── Keep old neon names but map to clean equivalents ── */
-  --color-neon-cyan:    #2563EB;
-  --color-neon-violet:  #6366F1;
-  --color-neon-magenta: #8B5CF6;
-  --color-neon-lime:    #34D399;
+  --color-neon-cyan:    #B03B4A;
+  --color-neon-violet:  #B03B4A;
+  --color-neon-magenta: #B03B4A;
+  --color-neon-lime:    #B03B4A;
   --color-neon-amber:   #F59E0B;
+
+
+  /* ── Warm palette: re-point Tailwind's cool colour scales (no blue/purple/green) ── */
+  --color-blue-50: #FAF5F6;
+  --color-blue-100: #F7E8EA;
+  --color-blue-200: #EECDD2;
+  --color-blue-300: #E2A7AF;
+  --color-blue-400: #D27985;
+  --color-blue-500: #C44F5F;
+  --color-blue-600: #AC3949;
+  --color-blue-700: #8E2F3C;
+  --color-blue-800: #6F252F;
+  --color-blue-900: #581D25;
+  --color-blue-950: #361217;
+  --color-indigo-50: #FAF5F6;
+  --color-indigo-100: #F7E8EA;
+  --color-indigo-200: #EECDD2;
+  --color-indigo-300: #E2A7AF;
+  --color-indigo-400: #D27985;
+  --color-indigo-500: #C44F5F;
+  --color-indigo-600: #AC3949;
+  --color-indigo-700: #8E2F3C;
+  --color-indigo-800: #6F252F;
+  --color-indigo-900: #581D25;
+  --color-indigo-950: #361217;
+  --color-violet-50: #FAF5F6;
+  --color-violet-100: #F7E8EA;
+  --color-violet-200: #EECDD2;
+  --color-violet-300: #E2A7AF;
+  --color-violet-400: #D27985;
+  --color-violet-500: #C44F5F;
+  --color-violet-600: #AC3949;
+  --color-violet-700: #8E2F3C;
+  --color-violet-800: #6F252F;
+  --color-violet-900: #581D25;
+  --color-violet-950: #361217;
+  --color-purple-50: #FAF5F6;
+  --color-purple-100: #F7E8EA;
+  --color-purple-200: #EECDD2;
+  --color-purple-300: #E2A7AF;
+  --color-purple-400: #D27985;
+  --color-purple-500: #C44F5F;
+  --color-purple-600: #AC3949;
+  --color-purple-700: #8E2F3C;
+  --color-purple-800: #6F252F;
+  --color-purple-900: #581D25;
+  --color-purple-950: #361217;
+  --color-sky-50: #FAF5F6;
+  --color-sky-100: #F7E8EA;
+  --color-sky-200: #EECDD2;
+  --color-sky-300: #E2A7AF;
+  --color-sky-400: #D27985;
+  --color-sky-500: #C44F5F;
+  --color-sky-600: #AC3949;
+  --color-sky-700: #8E2F3C;
+  --color-sky-800: #6F252F;
+  --color-sky-900: #581D25;
+  --color-sky-950: #361217;
+  --color-cyan-50: #FAF5F6;
+  --color-cyan-100: #F7E8EA;
+  --color-cyan-200: #EECDD2;
+  --color-cyan-300: #E2A7AF;
+  --color-cyan-400: #D27985;
+  --color-cyan-500: #C44F5F;
+  --color-cyan-600: #AC3949;
+  --color-cyan-700: #8E2F3C;
+  --color-cyan-800: #6F252F;
+  --color-cyan-900: #581D25;
+  --color-cyan-950: #361217;
+  --color-fuchsia-50: #FAF5F6;
+  --color-fuchsia-100: #F7E8EA;
+  --color-fuchsia-200: #EECDD2;
+  --color-fuchsia-300: #E2A7AF;
+  --color-fuchsia-400: #D27985;
+  --color-fuchsia-500: #C44F5F;
+  --color-fuchsia-600: #AC3949;
+  --color-fuchsia-700: #8E2F3C;
+  --color-fuchsia-800: #6F252F;
+  --color-fuchsia-900: #581D25;
+  --color-fuchsia-950: #361217;
+  --color-lime-50: #FAF8F5;
+  --color-lime-100: #F9F2E7;
+  --color-lime-200: #F2E3CA;
+  --color-lime-300: #E8CEA1;
+  --color-lime-400: #DBB470;
+  --color-lime-500: #D09C43;
+  --color-lime-600: #B8852E;
+  --color-lime-700: #976D26;
+  --color-lime-800: #76561E;
+  --color-lime-900: #5E4417;
+  --color-lime-950: #39290E;
+  --color-green-50: #FAF8F5;
+  --color-green-100: #F9F2E7;
+  --color-green-200: #F2E3CA;
+  --color-green-300: #E8CEA1;
+  --color-green-400: #DBB470;
+  --color-green-500: #D09C43;
+  --color-green-600: #B8852E;
+  --color-green-700: #976D26;
+  --color-green-800: #76561E;
+  --color-green-900: #5E4417;
+  --color-green-950: #39290E;
+  --color-emerald-50: #FAF8F5;
+  --color-emerald-100: #F9F2E7;
+  --color-emerald-200: #F2E3CA;
+  --color-emerald-300: #E8CEA1;
+  --color-emerald-400: #DBB470;
+  --color-emerald-500: #D09C43;
+  --color-emerald-600: #B8852E;
+  --color-emerald-700: #976D26;
+  --color-emerald-800: #76561E;
+  --color-emerald-900: #5E4417;
+  --color-emerald-950: #39290E;
+  --color-teal-50: #FAF8F5;
+  --color-teal-100: #F9F2E7;
+  --color-teal-200: #F2E3CA;
+  --color-teal-300: #E8CEA1;
+  --color-teal-400: #DBB470;
+  --color-teal-500: #D09C43;
+  --color-teal-600: #B8852E;
+  --color-teal-700: #976D26;
+  --color-teal-800: #76561E;
+  --color-teal-900: #5E4417;
+  --color-teal-950: #39290E;
+  /* Warm neutrals in place of Tailwind's blue-grey slate/gray */
+  --color-slate-50: #FAFAF9;
+  --color-slate-100: #F6F5F4;
+  --color-slate-200: #EAE8E6;
+  --color-slate-300: #D9D6D3;
+  --color-slate-400: #ADA69F;
+  --color-slate-500: #81786E;
+  --color-slate-600: #605952;
+  --color-slate-700: #4A453F;
+  --color-slate-800: #2F2B28;
+  --color-slate-900: #1E1C1A;
+  --color-slate-950: #0E0D0C;
+  --color-gray-50: #FAFAF9;
+  --color-gray-100: #F6F5F4;
+  --color-gray-200: #EAE8E6;
+  --color-gray-300: #D9D6D3;
+  --color-gray-400: #ADA69F;
+  --color-gray-500: #81786E;
+  --color-gray-600: #605952;
+  --color-gray-700: #4A453F;
+  --color-gray-800: #2F2B28;
+  --color-gray-900: #1E1C1A;
+  --color-gray-950: #0E0D0C;
 
   /* Minimal animations — purposeful only */
   --animate-fade-in: fade-in 0.4s ease-out;
@@ -62,7 +209,7 @@ html, body, #root {
 body {
   margin: 0;
   background: var(--color-void-950);
-  color: #E2E4EE;
+  color: #EBE8E5;
   font-family: var(--font-display);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -87,7 +234,7 @@ body {
 
 /* ── Accent text (solid, no animated gradient) ── */
 .text-gradient-cyan {
-  color: #60A5FA;
+  color: #B03B4A;
 }
 
 /* ── Subtle dot-grid background texture ── */
@@ -98,9 +245,9 @@ body {
 }
 
 /* ── Glow classes — neutralised to clean accent rings ── */
-.glow-cyan    { box-shadow: 0 0 0 1px rgba(37,99,235,0.2), 0 4px 20px -4px rgba(37,99,235,0.15); }
-.glow-violet  { box-shadow: 0 0 0 1px rgba(99,102,241,0.2), 0 4px 20px -4px rgba(99,102,241,0.12); }
-.glow-magenta { box-shadow: 0 0 0 1px rgba(139,92,246,0.2), 0 4px 20px -4px rgba(139,92,246,0.12); }
+.glow-cyan    { box-shadow: 0 0 0 1px rgba(176,59,74,0.2), 0 4px 20px -4px rgba(176,59,74,0.15); }
+.glow-violet  { box-shadow: 0 0 0 1px rgba(176,59,74,0.2), 0 4px 20px -4px rgba(176,59,74,0.12); }
+.glow-magenta { box-shadow: 0 0 0 1px rgba(176,59,74,0.2), 0 4px 20px -4px rgba(176,59,74,0.12); }
 
 /* ── Focus ring ── */
 .focus-ring { outline: none; }

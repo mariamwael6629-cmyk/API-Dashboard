@@ -68,8 +68,8 @@ export default function PricingSection() {
                 </ul>
 
                 <Button
-                  variant={plan.highlight ? "primary" : "secondary"}
-                  className={`mt-8 w-full ${!plan.highlight ? "border-border text-ink-2 hover:border-brand/40 hover:text-ink" : ""}`}
+                  variant={plan.highlight ? "primary" : "outlineLight"}
+                  className="mt-8 w-full"
                   onClick={() => navigate("/login")}
                 >
                   Get Started

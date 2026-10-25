@@ -7,7 +7,7 @@ export const NODE_TYPES = {
     label: "Trigger",
     icon: Zap,
     tone: "lime",
-    accent: "#b6ff3c",
+    accent: "#B03B4A",
     description: "Starts the workflow",
   },
   api_call: {
@@ -15,7 +15,7 @@ export const NODE_TYPES = {
     label: "API Call",
     icon: Globe,
     tone: "cyan",
-    accent: "#4cf3ff",
+    accent: "#B03B4A",
     description: "Calls a connected provider",
   },
   transform: {
@@ -23,7 +23,7 @@ export const NODE_TYPES = {
     label: "Transform",
     icon: Shuffle,
     tone: "violet",
-    accent: "#a78bfa",
+    accent: "#E1A4AC",
     description: "Maps / reshapes payload",
   },
   condition: {
@@ -39,7 +39,7 @@ export const NODE_TYPES = {
     label: "Output",
     icon: FlagTriangleRight,
     tone: "magenta",
-    accent: "#ff4fd8",
+    accent: "#B03B4A",
     description: "Final destination / response",
   },
 };

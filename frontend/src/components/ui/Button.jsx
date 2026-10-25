@@ -8,6 +8,11 @@ const variants = {
     "bg-transparent border border-white/12 text-slate-300 hover:border-brand/40 hover:text-slate-100 transition-colors",
   ghost:
     "bg-transparent text-slate-400 hover:bg-white/5 hover:text-slate-200 transition-colors",
+  // Variants for light surfaces (landing page) — the ones above assume the dark app shell.
+  outlineLight:
+    "bg-transparent border border-border text-ink-2 hover:border-brand/40 hover:text-ink transition-colors",
+  ghostLight:
+    "bg-transparent text-ink-2 hover:bg-surface hover:text-ink transition-colors",
   danger:
     "bg-rose-500/12 text-rose-300 border border-rose-500/25 hover:bg-rose-500/20 transition-colors",
 };

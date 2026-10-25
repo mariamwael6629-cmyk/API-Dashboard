@@ -42,7 +42,7 @@ export default function WorkflowCanvas({
             markerHeight="6"
             orient="auto-start-reverse"
           >
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(76,243,255,0.55)" />
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(176,59,74,0.55)" />
           </marker>
         </defs>
         {edges.map(([fromId, toId], i) => {
@@ -55,7 +55,7 @@ export default function WorkflowCanvas({
               key={`${fromId}-${toId}-${i}`}
               d={edgePath(from, to)}
               fill="none"
-              stroke={isActive ? "rgba(76,243,255,0.9)" : "rgba(255,255,255,0.18)"}
+              stroke={isActive ? "rgba(176,59,74,0.9)" : "rgba(255,255,255,0.18)"}
               strokeWidth={isActive ? 2.5 : 1.5}
               strokeDasharray={isActive ? "6 4" : "none"}
               className={isActive ? "animate-dash" : ""}
