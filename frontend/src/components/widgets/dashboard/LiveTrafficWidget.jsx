@@ -94,12 +94,12 @@ export default function LiveTrafficWidget() {
             <CartesianGrid stroke="rgba(255,255,255,0.06)" vertical={false} />
             <XAxis
               dataKey="time"
-              tick={{ fill: "#867869", fontSize: 11 }}
+              tick={{ fill: "#7C7673", fontSize: 11 }}
               axisLine={false}
               tickLine={false}
               minTickGap={20}
             />
-            <YAxis tick={{ fill: "#867869", fontSize: 11 }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fill: "#7C7673", fontSize: 11 }} axisLine={false} tickLine={false} />
             <Tooltip content={<CustomTooltip />} />
             <Area
               type="monotone"

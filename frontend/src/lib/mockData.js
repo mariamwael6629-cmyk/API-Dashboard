@@ -30,7 +30,7 @@ export const PROVIDERS = [
     id: "github",
     name: "GitHub",
     category: "Dev Tools",
-    color: "#EFEDEB",
+    color: "#EEEDEC",
     auth: "oauth",
     status: "connected",
     requests24h: 9120,
@@ -66,7 +66,7 @@ export const PROVIDERS = [
     id: "google",
     name: "Google APIs",
     category: "Cloud",
-    color: "#ffb347",
+    color: "#DF8767",
     auth: "oauth",
     status: "connected",
     requests24h: 7741,
@@ -92,7 +92,7 @@ export const TEAM_MEMBERS = [
   { id: 1, name: "Mariam Wael", email: "mariam@nexora.dev", role: "Owner", status: "online", avatarColor: "#B03B4A" },
   { id: 2, name: "Omar Hassan", email: "omar@nexora.dev", role: "Admin", status: "online", avatarColor: "#E1A4AC" },
   { id: 3, name: "Lina Farouk", email: "lina@nexora.dev", role: "Developer", status: "idle", avatarColor: "#B03B4A" },
-  { id: 4, name: "Yusuf Adel", email: "yusuf@nexora.dev", role: "Developer", status: "offline", avatarColor: "#ffb347" },
+  { id: 4, name: "Yusuf Adel", email: "yusuf@nexora.dev", role: "Developer", status: "offline", avatarColor: "#DF8767" },
   { id: 5, name: "Sara Khaled", email: "sara@nexora.dev", role: "Viewer", status: "online", avatarColor: "#B03B4A" },
 ];
 

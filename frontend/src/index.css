@@ -7,35 +7,35 @@
   --font-mono:    "JetBrains Mono", ui-monospace, monospace;
 
   /* ── App shell (dark-neutral, NOT sci-fi) ── */
-  --color-void-950: #151311;
-  --color-void-900: #1D1A17;
-  --color-void-800: #27231F;
-  --color-void-700: #2E2A25;
-  --color-void-600: #3A342E;
+  --color-void-950: #141312;
+  --color-void-900: #1B1A19;
+  --color-void-800: #242322;
+  --color-void-700: #2B2928;
+  --color-void-600: #363332;
 
   /* ── Brand accent — single professional blue ── */
   --color-brand:        #B03B4A;
   --color-brand-dark:   #8E2E3B;
   --color-brand-light:  #D0707D;
-  --color-brand-bg:     #F8F7F6;
+  --color-brand-bg:     #F7F7F7;
   --color-brand-border: #EFCED3;
 
   /* ── Landing / light surface tokens ── */
   --color-canvas:   #FFFFFF;
-  --color-surface:  #FAF9F8;
-  --color-surface-2:#F3F1EF;
-  --color-border:   #EDEBE9;
+  --color-surface:  #F9F9F9;
+  --color-surface-2:#F2F1F0;
+  --color-border:   #ECEBEA;
 
   /* ── Text scale ── */
   --color-ink:   #1B1816;
-  --color-ink-2: #6D6155;
-  --color-ink-3: #ABA095;
+  --color-ink-2: #65605D;
+  --color-ink-3: #A49F9C;
 
   /* ── Semantic (no neon) ── */
   --color-success:    #8B2E3B;
   --color-success-bg: #F8F6F5;
-  --color-warning:    #D97706;
-  --color-warning-bg: #FFFBEB;
+  --color-warning:    #B84E27;
+  --color-warning-bg: #F5F5F5;
   --color-danger:     #DC2626;
   --color-danger-bg:  #FEF2F2;
 
@@ -125,8 +125,8 @@
   --color-fuchsia-800: #6F252F;
   --color-fuchsia-900: #581D25;
   --color-fuchsia-950: #361217;
-  --color-lime-50: #FAF8F5;
-  --color-lime-100: #F9F2E7;
+  --color-lime-50: #F8F7F7;
+  --color-lime-100: #F1F0EF;
   --color-lime-200: #F2D9CA;
   --color-lime-300: #E8BBA1;
   --color-lime-400: #DB9770;
@@ -135,9 +135,9 @@
   --color-lime-700: #974F26;
   --color-lime-800: #763E1E;
   --color-lime-900: #5E3117;
-  --color-lime-950: #39290E;
-  --color-green-50: #FAF8F5;
-  --color-green-100: #F9F2E7;
+  --color-lime-950: #252322;
+  --color-green-50: #F8F7F7;
+  --color-green-100: #F1F0EF;
   --color-green-200: #F2D9CA;
   --color-green-300: #E8BBA1;
   --color-green-400: #DB9770;
@@ -146,9 +146,9 @@
   --color-green-700: #974F26;
   --color-green-800: #763E1E;
   --color-green-900: #5E3117;
-  --color-green-950: #39290E;
-  --color-emerald-50: #FAF8F5;
-  --color-emerald-100: #F9F2E7;
+  --color-green-950: #252322;
+  --color-emerald-50: #F8F7F7;
+  --color-emerald-100: #F1F0EF;
   --color-emerald-200: #F2D9CA;
   --color-emerald-300: #E8BBA1;
   --color-emerald-400: #DB9770;
@@ -157,9 +157,9 @@
   --color-emerald-700: #974F26;
   --color-emerald-800: #763E1E;
   --color-emerald-900: #5E3117;
-  --color-emerald-950: #39290E;
-  --color-teal-50: #FAF8F5;
-  --color-teal-100: #F9F2E7;
+  --color-emerald-950: #252322;
+  --color-teal-50: #F8F7F7;
+  --color-teal-100: #F1F0EF;
   --color-teal-200: #F2D9CA;
   --color-teal-300: #E8BBA1;
   --color-teal-400: #DB9770;
@@ -168,29 +168,29 @@
   --color-teal-700: #974F26;
   --color-teal-800: #763E1E;
   --color-teal-900: #5E3117;
-  --color-teal-950: #39290E;
+  --color-teal-950: #252322;
   /* Warm neutrals in place of Tailwind's blue-grey slate/gray */
-  --color-slate-50: #FAFAF9;
-  --color-slate-100: #F6F5F4;
-  --color-slate-200: #EAE8E6;
-  --color-slate-300: #D9D6D3;
-  --color-slate-400: #ADA69F;
-  --color-slate-500: #81786E;
-  --color-slate-600: #605952;
-  --color-slate-700: #4A453F;
+  --color-slate-50: #FAF9F9;
+  --color-slate-100: #F5F5F5;
+  --color-slate-200: #E9E8E7;
+  --color-slate-300: #D8D5D4;
+  --color-slate-400: #AAA5A2;
+  --color-slate-500: #7C7673;
+  --color-slate-600: #5D5855;
+  --color-slate-700: #474442;
   --color-slate-800: #2F2B28;
-  --color-slate-900: #1E1C1A;
+  --color-slate-900: #1D1C1B;
   --color-slate-950: #0E0D0C;
-  --color-gray-50: #FAFAF9;
-  --color-gray-100: #F6F5F4;
-  --color-gray-200: #EAE8E6;
-  --color-gray-300: #D9D6D3;
-  --color-gray-400: #ADA69F;
-  --color-gray-500: #81786E;
-  --color-gray-600: #605952;
-  --color-gray-700: #4A453F;
+  --color-gray-50: #FAF9F9;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #E9E8E7;
+  --color-gray-300: #D8D5D4;
+  --color-gray-400: #AAA5A2;
+  --color-gray-500: #7C7673;
+  --color-gray-600: #5D5855;
+  --color-gray-700: #474442;
   --color-gray-800: #2F2B28;
-  --color-gray-900: #1E1C1A;
+  --color-gray-900: #1D1C1B;
   --color-gray-950: #0E0D0C;
 
   /* Minimal animations — purposeful only */
@@ -209,7 +209,7 @@ html, body, #root {
 body {
   margin: 0;
   background: var(--color-void-950);
-  color: #EBE8E5;
+  color: #E9E8E7;
   font-family: var(--font-display);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;

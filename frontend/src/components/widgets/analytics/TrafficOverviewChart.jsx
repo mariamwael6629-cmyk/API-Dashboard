@@ -76,14 +76,14 @@ export default function TrafficOverviewChart() {
             <CartesianGrid stroke="rgba(255,255,255,0.06)" vertical={false} />
             <XAxis
               dataKey="time"
-              tick={{ fill: "#867869", fontSize: 11 }}
+              tick={{ fill: "#7C7673", fontSize: 11 }}
               axisLine={false}
               tickLine={false}
               minTickGap={20}
             />
-            <YAxis tick={{ fill: "#867869", fontSize: 11 }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fill: "#7C7673", fontSize: 11 }} axisLine={false} tickLine={false} />
             <Tooltip content={<CustomTooltip />} />
-            <Legend wrapperStyle={{ fontSize: 12, color: "#B1A69B" }} />
+            <Legend wrapperStyle={{ fontSize: 12, color: "#AAA5A2" }} />
             <Area
               type="monotone"
               dataKey="requests"

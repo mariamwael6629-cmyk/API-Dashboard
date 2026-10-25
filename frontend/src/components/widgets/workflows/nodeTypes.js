@@ -31,7 +31,7 @@ export const NODE_TYPES = {
     label: "Condition",
     icon: GitBranch,
     tone: "amber",
-    accent: "#ffb347",
+    accent: "#DF8767",
     description: "Branches on a rule",
   },
   output: {
