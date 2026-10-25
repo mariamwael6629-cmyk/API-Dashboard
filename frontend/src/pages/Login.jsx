@@ -168,7 +168,7 @@ export default function Login() {
               type="button"
               variant="secondary"
               className="justify-center"
-              onClick={() => login("demo@nexora.dev", "demo")}
+              onClick={() => login("demo@nexora.dev", "demo1234")}
               aria-label="Continue with Google (demo)"
             >
               <Mail className="h-4 w-4" /> Google
@@ -177,7 +177,7 @@ export default function Login() {
               type="button"
               variant="secondary"
               className="justify-center"
-              onClick={() => login("demo@nexora.dev", "demo")}
+              onClick={() => login("demo@nexora.dev", "demo1234")}
               aria-label="Continue with GitHub (demo)"
             >
               <Lock className="h-4 w-4" /> GitHub

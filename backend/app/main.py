@@ -1,13 +1,20 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from sqlalchemy import select
 
 from app.api.v1 import api_router, ws
 from app.core.config import settings
-from app.db.session import Base, engine
+from app.core.security import hash_password
+from app.db.session import AsyncSessionLocal, Base, engine
 
 # Import models so they register on Base.metadata before create_all runs.
 from app import models  # noqa: F401
+from app.models.user import User
+
+# Account behind the "Continue with Google/GitHub (demo)" buttons on the login page.
+DEMO_EMAIL = "demo@nexora.dev"
+DEMO_PASSWORD = "demo1234"
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -39,6 +46,11 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
 async def on_startup():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+    async with AsyncSessionLocal() as db:
+        existing = await db.scalar(select(User).where(User.email == DEMO_EMAIL))
+        if existing is None:
+            db.add(User(email=DEMO_EMAIL, name="Demo User", hashed_password=hash_password(DEMO_PASSWORD)))
+            await db.commit()
 
 
 @app.get("/health", tags=["system"])
