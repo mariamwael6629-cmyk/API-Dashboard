@@ -6,7 +6,7 @@ const FEATURES = [
     icon: Boxes,
     title: "Unify every API in one place",
     description:
-      "Connect OpenAI, Stripe, GitHub, Slack and dozens more behind a single, consistent interface — no more juggling SDKs and auth flows.",
+      "Connect OpenAI, Stripe, GitHub, Slack and dozens more behind one consistent interface, so you stop juggling SDKs and auth flows.",
   },
   {
     icon: Gauge,
@@ -18,7 +18,7 @@ const FEATURES = [
     icon: Workflow,
     title: "Visual workflow builder",
     description:
-      "Chain providers into automated workflows — webhook routers, enrichment pipelines, lead qualifiers — without writing glue code.",
+      "Chain providers into automated workflows such as webhook routers, enrichment pipelines and lead qualifiers, without writing glue code.",
   },
   {
     icon: ShieldCheck,

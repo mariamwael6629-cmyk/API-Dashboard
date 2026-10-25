@@ -65,30 +65,30 @@ export default function TrafficOverviewChart() {
           <AreaChart data={series} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
             <defs>
               <linearGradient id="analyticsTrafficGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#4cf3ff" stopOpacity={0.45} />
-                <stop offset="100%" stopColor="#4cf3ff" stopOpacity={0} />
+                <stop offset="0%" stopColor="#E57F45" stopOpacity={0.45} />
+                <stop offset="100%" stopColor="#E57F45" stopOpacity={0} />
               </linearGradient>
               <linearGradient id="analyticsLatencyGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#a78bfa" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#a78bfa" stopOpacity={0} />
+                <stop offset="0%" stopColor="#62A3C8" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="#62A3C8" stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="rgba(255,255,255,0.06)" vertical={false} />
             <XAxis
               dataKey="time"
-              tick={{ fill: "#64748b", fontSize: 11 }}
+              tick={{ fill: "#85837D", fontSize: 11 }}
               axisLine={false}
               tickLine={false}
               minTickGap={20}
             />
-            <YAxis tick={{ fill: "#64748b", fontSize: 11 }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fill: "#85837D", fontSize: 11 }} axisLine={false} tickLine={false} />
             <Tooltip content={<CustomTooltip />} />
-            <Legend wrapperStyle={{ fontSize: 12, color: "#94a3b8" }} />
+            <Legend wrapperStyle={{ fontSize: 12, color: "#9D9B94" }} />
             <Area
               type="monotone"
               dataKey="requests"
               name="Requests"
-              stroke="#4cf3ff"
+              stroke="#E57F45"
               strokeWidth={2}
               fill="url(#analyticsTrafficGradient)"
             />
@@ -96,7 +96,7 @@ export default function TrafficOverviewChart() {
               type="monotone"
               dataKey="latency"
               name="Latency (ms)"
-              stroke="#a78bfa"
+              stroke="#62A3C8"
               strokeWidth={2}
               fill="url(#analyticsLatencyGradient)"
             />

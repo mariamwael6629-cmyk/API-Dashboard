@@ -43,8 +43,8 @@ export default function NetworkVisualization() {
         ))}
         <defs>
           <linearGradient id="nexora-line-grad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#4cf3ff" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="#a78bfa" stopOpacity="0.3" />
+            <stop offset="0%" stopColor="#E57F45" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="#62A3C8" stopOpacity="0.3" />
           </linearGradient>
         </defs>
       </svg>

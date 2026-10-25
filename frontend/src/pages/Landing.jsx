@@ -12,7 +12,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import Button from "../components/ui/Button";
-import NetworkVisualization from "../components/widgets/landing/NetworkVisualization";
+import PortYard from "../components/widgets/landing/PortYard";
 import FeatureSection from "../components/widgets/landing/FeatureSection";
 import PricingSection from "../components/widgets/landing/PricingSection";
 
@@ -41,7 +41,7 @@ export default function Landing() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-canvas text-ink">
       {/* ── Navbar ── */}
-      <header className="sticky top-0 z-30 border-b border-border bg-canvas/95 backdrop-blur-sm">
+      <header className="sticky top-0 z-30 border-b-2 border-ink bg-canvas">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8">
           <Link
             to="/"
@@ -70,7 +70,7 @@ export default function Landing() {
 
           <div className="hidden items-center gap-3 md:flex">
             <Link to="/login" className="focus-ring rounded-lg">
-              <Button variant="ghost" size="sm" className="text-ink-2 hover:text-ink hover:bg-surface">
+              <Button variant="outline" size="sm" className="border-transparent">
                 Sign In
               </Button>
             </Link>
@@ -112,7 +112,7 @@ export default function Landing() {
                 ))}
                 <div className="mt-3 flex flex-col gap-2 border-t border-border pt-3">
                   <Link to="/login" onClick={() => setMobileOpen(false)}>
-                    <Button variant="ghost" className="w-full text-ink-2">
+                    <Button variant="outline" className="w-full">
                       Sign In
                     </Button>
                   </Link>
@@ -135,20 +135,20 @@ export default function Landing() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55 }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-brand-border bg-brand-bg px-3.5 py-1.5 text-xs font-medium text-brand">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" />
+          <span className="inline-flex items-center gap-2 rounded-sm border border-ink/20 bg-surface px-3 py-1.5 text-xs font-medium text-ink-2">
+            <span className="h-2 w-3 bg-brand" />
             Now supporting 40+ API providers
           </span>
 
-          <h1 className="mt-7 font-display text-4xl font-bold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[56px]">
+          <h1 className="mt-7 font-display text-5xl font-bold leading-[0.98] text-ink sm:text-6xl lg:text-[72px]">
             One dashboard to{" "}
             <span className="text-brand">aggregate</span> every API you ship with
           </h1>
 
           <p className="mt-6 max-w-lg text-base leading-relaxed text-ink-2 sm:text-lg">
             Nexora unifies connections, monitoring, workflows and billing for every third-party
-            API your product depends on — with real-time observability and an AI co-pilot
-            built in.
+            API your product depends on. Real-time monitoring and an AI co-pilot come built
+            in.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -159,11 +159,7 @@ export default function Landing() {
               </Button>
             </Link>
             <a href="#features">
-              <Button
-                variant="ghost"
-                size="lg"
-                className="border border-border text-ink-2 hover:bg-surface hover:text-ink"
-              >
+              <Button variant="outline" size="lg">
                 <BookOpen className="h-4 w-4" />
                 View docs
               </Button>
@@ -188,9 +184,8 @@ export default function Landing() {
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.65, delay: 0.15 }}
-          className="rounded-2xl border border-border bg-void-950 p-2 shadow-xl"
         >
-          <NetworkVisualization />
+          <PortYard />
         </motion.div>
       </section>
 
@@ -223,14 +218,14 @@ export default function Landing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5 }}
-          className="mx-auto max-w-3xl rounded-2xl border border-brand/20 bg-brand-bg px-10 py-16 text-center"
+          className="mx-auto max-w-3xl rounded-md bg-void-900 px-6 py-16 text-center sm:px-10"
         >
-          <h2 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+          <h2 className="font-display text-4xl font-bold text-slate-50 sm:text-5xl">
             Ready to unify your API stack?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base text-ink-2">
-            Spin up your Nexora workspace in minutes — no credit card required for the
-            Starter plan.
+          <p className="mx-auto mt-4 max-w-xl text-base text-slate-300">
+            Set up your Nexora workspace in a few minutes. The Starter plan needs no credit
+            card.
           </p>
           <Link to="/login" className="mt-8 inline-block">
             <Button variant="primary" size="lg">

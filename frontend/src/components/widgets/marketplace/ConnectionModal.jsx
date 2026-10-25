@@ -123,7 +123,7 @@ export default function ConnectionModal({ provider, onClose }) {
                     {active && (
                       <motion.span
                         layoutId="auth-method-pill"
-                        className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-400 to-violet-400"
+                        className="absolute inset-0 rounded-lg bg-cyan-400"
                         transition={{ type: "spring", stiffness: 350, damping: 30 }}
                       />
                     )}

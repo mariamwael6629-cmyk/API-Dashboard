@@ -33,7 +33,7 @@ function buildMockResponse({ method, url }) {
       timestamp: new Date().toISOString(),
       data: {
         id: Math.floor(Math.random() * 100000),
-        message: "This is a simulated response — backend not connected yet.",
+        message: "This is a simulated response. Backend not connected yet.",
         items: [
           { id: 1, name: "Sample Item A", active: true },
           { id: 2, name: "Sample Item B", active: false },

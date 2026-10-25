@@ -91,7 +91,7 @@ export default function ApiKeysSection() {
             </div>
           </div>
         ))}
-        {keys.length === 0 && <p className="text-sm text-slate-500">No API keys yet — generate one to get started.</p>}
+        {keys.length === 0 && <p className="text-sm text-slate-500">No API keys yet. Generate one to get started.</p>}
       </div>
     </GlassCard>
   );

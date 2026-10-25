@@ -7,7 +7,7 @@ export default function CurrentPlanCard({ plan, onManage }) {
   return (
     <GlassCard strong glow="cyan" className="flex flex-wrap items-center justify-between gap-5 p-6">
       <div className="flex items-center gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400/20 to-violet-400/20 text-cyan-300">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-400/15 text-cyan-300">
           <Sparkles className="h-6 w-6" strokeWidth={1.75} />
         </div>
         <div>

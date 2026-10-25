@@ -14,7 +14,7 @@ export default function MobileNav() {
   const setCommandPaletteOpen = useUIStore((s) => s.setCommandPaletteOpen);
 
   return (
-    <nav className="glass-strong fixed inset-x-3 bottom-3 z-30 flex items-center justify-between rounded-2xl px-2 py-2 lg:hidden">
+    <nav className="fixed inset-x-3 bottom-3 z-30 flex items-center justify-between rounded-2xl border border-white/10 bg-void-800 px-2 py-2 shadow-lg lg:hidden">
       {ITEMS.map(({ to, label, icon: Icon, end }) => (
         <NavLink
           key={to}

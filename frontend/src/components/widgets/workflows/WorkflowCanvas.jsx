@@ -119,7 +119,7 @@ export default function WorkflowCanvas({
                 </span>
                 <div className="min-w-0">
                   <p className="truncate text-xs font-semibold text-slate-100">{node.label}</p>
-                  <p className="text-[10px] uppercase tracking-wide text-slate-500">{def.label}</p>
+                  <p className="text-[11px] text-slate-400">{def.label}</p>
                 </div>
               </div>
               <span

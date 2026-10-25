@@ -12,7 +12,7 @@ export default function DangerZoneSection() {
   const handleDelete = () => {
     setConfirmOpen(false);
     setConfirmText("");
-    toast.success("Workspace deletion scheduled (demo only — no data was actually deleted).");
+    toast.success("Workspace deletion scheduled (demo only, no data was actually deleted).");
   };
 
   return (

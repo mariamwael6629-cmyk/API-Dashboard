@@ -30,7 +30,7 @@ export default function Billing() {
       await api.post("/billing/checkout", { planId: currentPlanId });
       toast.success("Redirecting to billing portal...");
     } catch {
-      toast.info("Stripe checkout would open here (UI-only demo — no live payment integration yet).");
+      toast.info("Stripe checkout would open here (UI-only demo, no live payment integration yet).");
     }
   };
 

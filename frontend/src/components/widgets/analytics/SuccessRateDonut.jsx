@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 import GlassCard from "../../ui/GlassCard";
 import { generateRequestLogs } from "../../../lib/mockData";
 
-const COLORS = { success: "#b6ff3c", client_error: "#ffb347", server_error: "#ff4fd8" };
+const COLORS = { success: "#52B585", client_error: "#F2C14E", server_error: "#F2C14E" };
 
 function CustomTooltip({ active, payload }) {
   if (!active || !payload?.length) return null;

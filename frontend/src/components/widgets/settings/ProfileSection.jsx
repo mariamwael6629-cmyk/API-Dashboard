@@ -18,7 +18,7 @@ export default function ProfileSection({ user }) {
       <h2 className="font-display text-sm font-semibold text-slate-100">Profile</h2>
       <form onSubmit={handleSave} className="mt-5 space-y-5">
         <div className="flex items-center gap-4">
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-violet-400 font-display text-xl font-semibold text-void-950">
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500 font-display text-xl font-semibold text-void-950">
             {name?.[0]?.toUpperCase() ?? "U"}
           </div>
           <div className="text-xs text-slate-400">

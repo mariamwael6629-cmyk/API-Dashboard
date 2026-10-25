@@ -24,7 +24,7 @@ export default function UsageQuotas({ quotas }) {
               </div>
               <ProgressBar value={q.used} max={q.limit} tone={toneFor(pct)} />
               {pct >= 90 && (
-                <p className="mt-1 text-xs text-amber-300">Approaching your plan limit — consider upgrading.</p>
+                <p className="mt-1 text-xs text-amber-300">Approaching your plan limit. Consider upgrading.</p>
               )}
             </div>
           );

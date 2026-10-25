@@ -10,7 +10,7 @@ export default function Switch({ checked, onChange, label }) {
       onClick={() => onChange?.(!checked)}
       className={clsx(
         "focus-ring relative h-6 w-11 shrink-0 rounded-full transition-colors cursor-pointer",
-        checked ? "bg-gradient-to-r from-cyan-400 to-violet-400" : "bg-white/10"
+        checked ? "bg-cyan-400" : "bg-white/10"
       )}
     >
       <span

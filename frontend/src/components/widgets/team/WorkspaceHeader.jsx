@@ -5,7 +5,7 @@ export default function WorkspaceHeader({ memberCount, onlineCount }) {
   return (
     <GlassCard strong glow="violet" className="flex flex-wrap items-center justify-between gap-5 p-5 sm:p-6">
       <div className="flex items-center gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-400/20 to-cyan-400/20 text-violet-300">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-400/15 text-violet-300">
           <Users className="h-6 w-6" strokeWidth={1.75} />
         </div>
         <div>

@@ -11,7 +11,7 @@ export default function InvoiceHistory({ invoices }) {
       <div className="overflow-x-auto">
         <table className="w-full min-w-[480px] text-left text-sm">
           <thead>
-            <tr className="text-xs uppercase tracking-wide text-slate-500">
+            <tr className="text-xs text-slate-400">
               <th className="pb-2.5 font-medium">Date</th>
               <th className="pb-2.5 font-medium">Amount</th>
               <th className="pb-2.5 font-medium">Status</th>

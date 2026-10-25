@@ -86,7 +86,7 @@ export default function WorkflowBuilder() {
   }, [nodes, edges, activeWorkflow]);
 
   const handleSave = useCallback(() => {
-    toast.success("Workflow saved (local demo — not yet persisted to backend).");
+    toast.success("Workflow saved (local demo, not yet persisted to backend).");
   }, []);
 
   return (

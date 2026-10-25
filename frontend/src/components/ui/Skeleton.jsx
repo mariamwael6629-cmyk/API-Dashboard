@@ -4,7 +4,7 @@ export default function Skeleton({ className }) {
   return (
     <div
       className={clsx(
-        "animate-pulse rounded-lg bg-gradient-to-r from-white/5 via-white/10 to-white/5",
+        "animate-pulse rounded-lg bg-white/[0.07]",
         className
       )}
     />

@@ -44,7 +44,7 @@ export default function Login() {
           className="focus-ring mb-8 flex items-center justify-center gap-2 rounded-lg"
           aria-label="Nexora home"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 via-violet-400 to-fuchsia-400">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-cyan-500">
             <Hexagon className="h-5 w-5 text-void-950" strokeWidth={2.5} />
           </div>
           <span className="font-display text-lg font-semibold tracking-tight text-slate-100">
@@ -78,7 +78,7 @@ export default function Login() {
                 {mode === m && (
                   <motion.span
                     layoutId="login-mode-pill"
-                    className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-400 to-violet-400"
+                    className="absolute inset-0 rounded-lg bg-cyan-400"
                     transition={{ type: "spring", stiffness: 350, damping: 30 }}
                   />
                 )}

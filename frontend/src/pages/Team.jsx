@@ -9,7 +9,7 @@ import WorkspaceHeader from "../components/widgets/team/WorkspaceHeader";
 import MemberRow from "../components/widgets/team/MemberRow";
 import InviteMemberModal from "../components/widgets/team/InviteMemberModal";
 
-const AVATAR_COLORS = ["#4cf3ff", "#a78bfa", "#ff4fd8", "#b6ff3c", "#ffb347"];
+const AVATAR_COLORS = ["#E57F45", "#62A3C8", "#F2C14E", "#52B585", "#F2C14E"];
 
 export default function Team() {
   const [members, setMembers] = useState(TEAM_MEMBERS);

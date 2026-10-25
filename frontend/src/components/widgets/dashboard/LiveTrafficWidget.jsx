@@ -78,34 +78,34 @@ export default function LiveTrafficWidget() {
         </div>
       </div>
 
-      <div className="mt-4 h-56 flex-1">
+      <div className="mt-4 h-56 min-h-56 flex-1">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={series} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
             <defs>
               <linearGradient id="trafficGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#4cf3ff" stopOpacity={0.45} />
-                <stop offset="100%" stopColor="#4cf3ff" stopOpacity={0} />
+                <stop offset="0%" stopColor="#E57F45" stopOpacity={0.45} />
+                <stop offset="100%" stopColor="#E57F45" stopOpacity={0} />
               </linearGradient>
               <linearGradient id="errorGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#ff4fd8" stopOpacity={0.35} />
-                <stop offset="100%" stopColor="#ff4fd8" stopOpacity={0} />
+                <stop offset="0%" stopColor="#F2C14E" stopOpacity={0.35} />
+                <stop offset="100%" stopColor="#F2C14E" stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid stroke="rgba(255,255,255,0.06)" vertical={false} />
             <XAxis
               dataKey="time"
-              tick={{ fill: "#64748b", fontSize: 11 }}
+              tick={{ fill: "#85837D", fontSize: 11 }}
               axisLine={false}
               tickLine={false}
               minTickGap={20}
             />
-            <YAxis tick={{ fill: "#64748b", fontSize: 11 }} axisLine={false} tickLine={false} />
+            <YAxis tick={{ fill: "#85837D", fontSize: 11 }} axisLine={false} tickLine={false} />
             <Tooltip content={<CustomTooltip />} />
             <Area
               type="monotone"
               dataKey="requests"
               name="Requests"
-              stroke="#4cf3ff"
+              stroke="#E57F45"
               strokeWidth={2}
               fill="url(#trafficGradient)"
             />
@@ -113,7 +113,7 @@ export default function LiveTrafficWidget() {
               type="monotone"
               dataKey="errors"
               name="Errors"
-              stroke="#ff4fd8"
+              stroke="#F2C14E"
               strokeWidth={2}
               fill="url(#errorGradient)"
             />
