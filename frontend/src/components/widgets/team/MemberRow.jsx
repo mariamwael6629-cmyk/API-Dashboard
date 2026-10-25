@@ -24,12 +24,12 @@ export default function MemberRow({ member, onRoleChange, onRemove }) {
         <StatusDot status={member.status} className="absolute -bottom-1 -right-1" />
       </div>
 
-      <div className="min-w-0 flex-1">
+      <div className="min-w-0 flex-1 basis-[calc(100%-3.5rem)] sm:basis-auto">
         <p className="truncate text-sm font-medium text-slate-100">{member.name}</p>
         <p className="truncate text-xs text-slate-400">{member.email}</p>
       </div>
 
-      <Badge tone={ROLE_TONE[member.role] ?? "slate"} className="shrink-0">
+      <Badge tone={ROLE_TONE[member.role] ?? "slate"} className="shrink-0 max-sm:ml-14">
         {member.role}
       </Badge>
 
